@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: hsl(210, 60%, 98%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 80px 0px;
+}
+@media (max-width:767px) {
+    body{
+        padding: 20px 10px;
+    }
+}
+main{
+    width:714px;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgba(0 0 0 / 7%);
+    padding: 30px;
+    border-radius: 20px;
+}
+@media (max-width:767px) {
+    main{
+        padding: 30px 10px;
+    }
+}
+h1{
+    font-weight: 800;
+    color:#000;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+}
+h1 span{
+    padding: 1px 11px;
+    border-radius: 9px;
+    color: #fff;
+    background-color:  hsl(219, 85%, 26%);
+    margin-left: 10px;
+}
+@media (max-width:767px) {
+    h1{
+        font-size: 21px;
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header p {
+    cursor: pointer;
+    transition: .5s;
+}
+header p:hover{
+    color: hsl(219, 14%, 30%);
+}
+.what-happen{
+    color:hsl(219, 12%, 42%);
+    font-weight: 500;
+    position: relative;
+}
+.notfication-box p.unread .what-happen-unread::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    position: absolute;
+    right: -18px;
+    bottom: 3px;
+}
+.notfication-box{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 13px 20px;
+    border-radius: 7px;
+    position: relative;
+}
+.unread-box{
+  background-color:rgb(224 247 250 / 30%);
+}
+.notfication-box p {
+    font-size: 16px;
+}
+@media (max-width:767px) {
+    .notfication-box p {
+        font-size: 13.5px;
+    }
+}
+.notfication-box p:first-of-type{
+    margin-bottom: 4px;
+}
+.user-image{
+    width: 46px;
+    margin-right: 21px;
+}
+.name{
+    font-weight: 800;
+    margin-right: 3px;
+}
+.post{
+    font-weight: 600;
+    margin-left: 3px;
+    position: relative;
+}
+.notfication-box p.unread .post::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    position: absolute;
+    right: -18px;
+    bottom: 3px;
+}
+.post a {
+   color: hsl(224, 21%, 14%);
+   font-size: 600; 
+}
+.post a:hover{
+    font-weight: 800;
+    color:hsl(219, 85%, 26%);
+}
+.time{
+    color:  hsl(219, 14%, 63%);
+}
+.chess-club{
+    font-weight: 800;
+    position: relative;
+}
+.notfication-box p.unread .chess-club::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    position: absolute;
+    right: -18px;
+    bottom: 3px;
+}
+.chess-club a{
+    color: hsl(219, 85%, 26%);
+}
+.message{
+    border: 1px solid hsl(205, 33%, 90%);
+    color: hsl(219, 14%, 63%);
+    margin-top: 12px;
+    padding: 10px 15px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: .5s;
+}
+.message:hover{
+    background-color: rgb(224 247 250);
+}
+.image-post{
+    width: 45px;
+    position: absolute;
+    right: 22px;
+    bottom: 6px;
+}

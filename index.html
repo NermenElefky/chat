@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <!-- gooogle fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;800&display=swap" rel="stylesheet">
+
+  <!-- link style -->
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <main>
+     <header>
+          <h1>Notifications <span id="notfication_number">3</span></h1>
+          <p class = "what-happen" id ="mark">Mark all as read</p>
+     </header>
+     <div class="body">
+          <div class="notfication-box unread-box">
+              <img src="./assets/images/avatar-mark-webber.webp" alt=" photo" class ="user-image">
+              <div class="text">
+                <p class = "unread"><span class="name">Mark Webber</span>
+                  <span class="what-happen">reacted to your recent post</span>
+                  <span class="post"> <a href="#">My first tournament today!</a></span>
+                  <p class = "time">1m ago</p>
+                </p>
+
+              </div>
+          </div>
+
+          <div class="notfication-box unread-box">
+            <img src="./assets/images/avatar-angela-gray.webp" alt=" photo" class ="user-image">
+            <div class="text">
+              <p class = "unread"><span class="name">Angela Gray</span>
+                <span class="what-happen what-happen-unread">followed you</span>
+                <p class = "time">5m ago</p>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="notfication-box unread-box">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt=" photo" class ="user-image">
+            <div class="text">
+              <p class = "unread"><span class="name">Jacob Thompson</span>
+                <span class="what-happen">has joined your group</span>
+                <span class="chess-club"> <a href="#">Chess Club</a></span>
+                <p class = "time">1 day ago</p>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="notfication-box">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt=" photo" class ="user-image">
+            <div class="text">
+              <p><span class="name">Rizky Hasanuddin</span>
+                <span class="what-happen">sent you a private message</span>
+                <p class = "time">5 days ago</p>
+                <p class="message">
+                  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                  I'm already having lots of fun and improving my game.
+                </p>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="notfication-box">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt=" photo" class ="user-image">
+            <div class="text">
+              <p><span class="name">Kimberly Smith</span>
+                <span class="what-happen">commented on your picture</span>
+                <p class = "time">1 week ago</p>
+              </p>
+
+            </div>
+            <img src="./assets/images/image-chess.webp" alt="" class ="image-post">
+          </div>
+
+          <div class="notfication-box">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt=" photo" class ="user-image">
+            <div class="text">
+              <p><span class="name">Nathan Peterson</span>
+                <span class="what-happen">reacted to your recent post</span>
+                <span class="post"> <a href="#">5 end-game strategies to increase your win rate</a></span>
+                <p class = "time">2 weeks ago</p>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="notfication-box">
+            <img src="./assets/images/avatar-anna-kim.webp" alt=" photo" class ="user-image">
+            <div class="text">
+              <p><span class="name">Anna Kim </span>
+                <span class="what-happen">left the group</span>
+                <span class="chess-club"><a href="#"> Chess Club</a></span>
+                <p class = "time">2 weeks ago</p>
+              </p>
+
+            </div>
+          </div>
+     </div>
+
+  </main>
+  <script src="app.js"></script>
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
